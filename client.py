@@ -75,8 +75,8 @@ def main(target, argv):
     #parse CLI opts
     try:
         opts, args = getopt.getopt(argv,
-        's:ld',
-        ["send=", "listen", "details"])
+        'sl:d',
+        ["send", "listen=", "details"])
     except getopt.GetoptError:
         exit_with_error('Could not parse options.'), exit(1)
 
