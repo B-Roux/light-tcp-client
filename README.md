@@ -50,9 +50,9 @@ ltcp-client --version
 
 Copy-'n-paste (please be careful whenever you copy and paste commands):
 
-```zsh
+`
 cd /usr/local/bin && sudo git clone https://github.com/B-Roux/light-tcp-client.git && sudo dos2unix light-tcp-client/client.py && sudo chmod +x light-tcp-client/client.py && sudo ln light-tcp-client/client.py ltcp-client
-```
+`
 
 ### Uninstallation (Linux)
 
