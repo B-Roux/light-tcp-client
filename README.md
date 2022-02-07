@@ -9,5 +9,4 @@ Many things will be changing and you should consider the project unstable for th
 Please see the help.txt file (for now). I'll have better documentation when the project matures :)
 
 ## Installation
-I need to add better installation, but for now you can just clone this repository and run it with
-```$ Python3 [path/to/file/]tcp.py [your arguments]```
+`$````git -C /usr/local/bin clone https://github.com/B-Roux/ltcp-client.git```
