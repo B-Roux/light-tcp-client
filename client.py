@@ -37,7 +37,7 @@ def main(target, argv):
               "    -l, --listen [size]    Listen for [size] bytes (if unset, 4096)\n"
               "    -d, --details             Print the initial message and details")
         exit(0)
-        
+
     if target in ('-v', '--version'):
         print(version_number), exit(0)
 
@@ -62,7 +62,7 @@ def main(target, argv):
 
     #validate the url/IP(v4) before processing
     if re.fullmatch(
-        re.compile(ip_filter+'|'+domain_filter, re.VERBOSE), 
+        re.compile(ip_filter+'|'+domain_filter, re.VERBOSE),
         target
     ):
         try:
@@ -75,8 +75,8 @@ def main(target, argv):
     #parse CLI opts
     try:
         opts, args = getopt.getopt(argv,
-        'sld', 
-        ["send", "listen", "details"])
+        's:ld',
+        ["send=", "listen", "details"])
     except getopt.GetoptError:
         exit_with_error('Could not parse options.'), exit(1)
 
@@ -105,8 +105,8 @@ def main(target, argv):
     #set the initial message (either user specified or default)
     if options['send']: #use user-entered
         print('Enter the message to be sent:\r\n>>> ', end='')
-        textblock = ""       
-        while True:         
+        textblock = ""
+        while True:
             textblock += input() + '\r\n'
             if textblock[-4:] == '\r\n\r\n':
                 break
