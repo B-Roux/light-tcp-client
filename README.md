@@ -22,12 +22,6 @@ cd /usr/local/bin
 sudo git clone https://github.com/B-Roux/ltcp.git
 ```
 
-* Because this script was originally written on a Windows machine, we must change to UNIX line endings to make it work
-
-```zsh
-cd ltcp && tr -d '\15\32' < client.py > client.py && tr -d '\15\32' < help.txt > help.txt
-```
-
 * Give the script permission to run
 
 ```zsh
@@ -45,7 +39,6 @@ sudo ln ltcp/client.py ltcp-client
 ```zsh
 ltcp-client --help
 ```
-
 
 
 ### Uninstallation
