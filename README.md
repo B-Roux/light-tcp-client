@@ -25,13 +25,13 @@ sudo git clone https://github.com/B-Roux/ltcp.git
 * Since the file was originally made in Windows, we need to change the line endings
 
 ```zsh
-sudo dos2unix ./ltcp/client.py
+sudo dos2unix ltcp/client.py
 ```
 
 * Give the script permission to run
 
 ```zsh
-sudo chmod +x ./ltcp/client.py
+sudo chmod +x ltcp/client.py
 ```
 
 * Create a symbolic link named "ltcp-client"
@@ -46,10 +46,10 @@ sudo ln ltcp/client.py ltcp-client
 ltcp-client --help
 ```
 
-* copy-'n-paste command (please be careful whenever you copy and paste commands, be sure you know what they do.)
+Copy-'n-paste (please be careful whenever you copy and paste commands):
 
 ```zsh
-cd /usr/local/bin && sudo git clone https://github.com/B-Roux/ltcp.git && sudo dos2unix ./ltcp/client.py && sudo chmod +x ./ltcp/client.py && sudo ln ltcp/client.py ltcp-client
+cd /usr/local/bin && sudo git clone https://github.com/B-Roux/ltcp.git && sudo dos2unix ltcp/client.py && sudo chmod +x ltcp/client.py && sudo ln ltcp/client.py ltcp-client
 ```
 
 ### Uninstallation
