@@ -9,4 +9,15 @@ Many things will be changing and you should consider the project unstable for th
 Please see the help.txt file (for now). I'll have better documentation when the project matures :)
 
 ## Installation
-`$` ```sudo git -C /usr/local/bin clone https://github.com/B-Roux/ltcp-client.git```
+
+* Change the working directory to where you want the file to be located:
+
+```zsh
+cd /usr/local/bin
+```
+
+* Clone the git repository:
+
+```zsh
+sudo git clone https://github.com/B-Roux/ltcp-client.git
+```
