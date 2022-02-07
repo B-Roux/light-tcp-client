@@ -5,10 +5,6 @@ import re
 import sys
 import getopt
 
-#change working directory to file location
-from os import chdir as os_chdir, path as os_path
-os_chdir(os_path.dirname(os_path.abspath(__file__)))
-
 #spell checking instructions (you can ignore this)
 #cSpell:ignore chdir inet
 
