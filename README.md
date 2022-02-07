@@ -37,7 +37,7 @@ sudo ln ltcp/client.py ltcp-client
 * Run it!
 
 ```zsh
-ltcp/client --help
+ltcp-client --help
 ```
 
 
