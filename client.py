@@ -21,22 +21,21 @@ def main(target, argv):
 
     #Check if the argument is a help or version request
     if target in ('-h', '--help'):
-        print(
-            """Usage:
-                Domain:  ltcp-client [domain]:[port]
-                Example: ltcp-client www.example.com:80
-
-                IPV4:    ltcp-client [ip]:[port]
-                Example: ltcp-client 192.0.2.199:80
-
-                Help:    ltcp-client -h
-
-            Options:
-                -v, --version     Show the tool version (pass as only argument)
-                -h, --help               Show this menu (pass as only argument)
-                -s, --send                        Prompt custom message to send
-                -l, --listen [size]    Listen for [size] bytes (if unset, 4096)
-                -d, --details             Print the initial message and details""")
+        print("Usage:\n"
+              "    Domain:  ltcp-client [domain]:[port]\n"
+              "    Example: ltcp-client www.example.com:80\n"
+              "\n"
+              "    IPV4:    ltcp-client [ip]:[port]\n"
+              "    Example: ltcp-client 192.0.2.199:80\n"
+              "\n"
+              "    Help:    ltcp-client -h\n"
+              "\n"
+              "Options:\n"
+              "    -v, --version     Show the tool version (pass as only argument)\n"
+              "    -h, --help               Show this menu (pass as only argument)\n"
+              "    -s, --send                        Prompt custom message to send\n"
+              "    -l, --listen [size]    Listen for [size] bytes (if unset, 4096)\n"
+              "    -d, --details             Print the initial message and details")
         exit(0)
         
     if target in ('-v', '--version'):
