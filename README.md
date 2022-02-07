@@ -49,5 +49,5 @@ cd /usr/local/bin
 ```
 
 ```zsh
-sudo rm -rf ltcp
+sudo rm -rf ltcp && sudo rm ltcp-client
 ```
