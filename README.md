@@ -28,6 +28,20 @@ sudo git clone https://github.com/B-Roux/ltcp.git
 sudo chmod +x ./ltcp/client.py
 ```
 
+* Create a symbolic link named "ltcp-client"
+
+```zsh
+sudo ln ltcp/client.py ltcp-client
+```
+
+* Run it!
+
+```zsh
+ltcp/client --help
+```
+
+
+
 ### Uninstallation
 
 ```zsh
@@ -35,5 +49,5 @@ cd /usr/local/bin
 ```
 
 ```zsh
-sudo rm -rf ltcp-client && sudo rm ltcpc
+sudo rm -rf ltcp
 ```
