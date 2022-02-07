@@ -19,13 +19,13 @@ cd /usr/local/bin
 * Clone the git repository
 
 ```zsh
-sudo git clone https://github.com/B-Roux/ltcp-client.git
+sudo git clone https://github.com/B-Roux/ltcp.git
 ```
 
-* Create a short BASH script so we can run this script with a quick command:
+* Give the script permission to run
 
 ```zsh
-sudo printf "#!/bin/bash\npython3 /usr/local/bin/ltcp-client/client.py" > ltcp-client.sh
+sudo chmod +x ./ltcp/client.py
 ```
 
 ### Uninstallation
@@ -35,5 +35,5 @@ cd /usr/local/bin
 ```
 
 ```zsh
-sudo rm -rf ltcp-client && sudo rm ltcp-client.sh
+sudo rm -rf ltcp-client && sudo rm ltcpc
 ```
