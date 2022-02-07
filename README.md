@@ -22,6 +22,12 @@ cd /usr/local/bin
 sudo git clone https://github.com/B-Roux/ltcp.git
 ```
 
+* Since the file was originally made in Windows, we need to change the line endings
+
+```zsh
+sudo dos2unix ./ltcp/client.py ./ltcp/help.txt
+```
+
 * Give the script permission to run
 
 ```zsh
