@@ -50,9 +50,13 @@ cd /usr/local/bin && sudo git clone https://github.com/B-Roux/ltcp.git && sudo d
 
 ### Uninstallation
 
+* Change your directory to where you saved this script
+
 ```zsh
 cd /usr/local/bin
 ```
+
+* Delete the directory (recursively) and the symlink
 
 ```zsh
 sudo rm -rf ltcp && sudo rm ltcp-client
